@@ -121,7 +121,7 @@ torchrun --nnodes ${NODES} --nproc-per-node $((MP / NODES)) --node-rank $RANK --
 
 本项目通过环境变量 `VENDOR_PATCH` 支持不同硬件平台。启动推理时设置对应的值即可，代码会自动切换到该平台的适配路径。
 
-### 华为 Ascend A3（Atlas 900 系列）
+### 华为 Ascend A3
 
 需要安装 `torch_npu` 及 Ascend 驱动。启动时设置 `VENDOR_PATCH=ascend`：
 
